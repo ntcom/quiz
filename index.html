@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- fontawesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Custom Css Files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+
+    <!--Result Css-->
+    <link rel="stylesheet" href="./assets/css/result_style.css">
+
+</head>
+
+<body>
+
+    <main class="overflow-hidden">
+
+        <!-- step-number -->
+        <div class="step-number">
+            <div class="step-number-inner">
+                Question <span id="activeStep">1</span>/5
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="tab-100 order-c col-md-5 p-relative">
+
+                    <!-- side image -->
+                    <div class="side-img">
+                        <img src="./assets/images/side.png" alt="side-img">
+                    </div>
+
+                    <!-- bar -->
+                    <div class="step-bar">
+                        <div class="bar">
+                            <div class="w-100 fill"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tab-100 col-md-7">
+                    <div class="show-section wrapper">
+
+                        <!-- step 1 -->
+                        <section class="steps">
+
+                            <!-- form -->
+                            <form id="step1" method="post" novalidate>
+
+                                <!-- heading -->
+                                <h2 class="q-heading">
+                                    Công ty TNHH Thương mại và Giao nhận vận tải Trang Huy thành lập ngày tháng năm nào ?
+                                </h2>
+
+                                <!-- form field -->
+                                <div class="form-inner">
+                                    <div class="bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op1" value="12/04/2011">
+                                        <label>12/04/2011</label>
+                                    </div>
+                                    <div class="delay-100 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op1" value="24/03/2011">
+                                        <label>24/03/2011</label>
+                                    </div>
+                                    <div class="delay-200 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op1" value="24/03/2012">
+                                        <label>24/03/2012</label>
+                                    </div>
+                                </div>
+
+                                <!-- next previous button -->
+                                <div class="next-prev">
+                                    <button type="button" class="next" id="step1btn">
+                                        Tiếp theo<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+
+                        <!-- step 2 -->
+                        <section class="steps">
+
+                            <!-- form -->
+                            <form id="step2" method="post" novalidate>
+
+                                <!-- heading -->
+                                <h2 class="q-heading">
+                                    CEO của Công ty Trang Huy là ai?
+                                </h2>
+
+                                <!-- form field -->
+                                <div class="form-inner">
+                                    <div class="bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op2" value="Nguyễn Thị Bích Thủy">
+                                        <label>Nguyễn Thị Bích Thủy</label>
+                                    </div>
+                                    <div class="delay-100 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op2" value="Nguyễn Thái Hà">
+                                        <label>Nguyễn Thái Hà</label>
+                                    </div>
+                                    <div class="delay-200 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op2" value="Nguyễn Thanh Hồng">
+                                        <label>Nguyễn Thanh Hồng</label>
+                                    </div>
+                                </div>
+
+                                <!-- next previous button -->
+                                <div class="next-prev">
+                                    <button type="button" class="prev">
+                                        <i class="fa-solid fa-arrow-left"></i>Quay lại
+                                    </button>
+                                    <button type="button" class="next" id="step2btn">
+                                        Tiếp theo<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+
+                        <!-- step 3 -->
+                        <section class="steps">
+
+                            <!-- form -->
+                            <form id="step3" method="post" novalidate>
+
+                                <!-- heading -->
+                                <h2 class="q-heading">
+                                    Ba lĩnh vực hoạt động của Công ty Trang Huy là gì?
+                                </h2>
+
+                                <!-- form field -->
+                                <div class="form-inner">
+                                    <div class="bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op3" value="Kinh doanh kho bãi; Vận chuyển hàng hóa; Tháo dỡ lắp đặt">
+                                        <label>Kinh doanh kho bãi; Vận chuyển hàng hóa; Tháo dỡ lắp đặt</label>
+                                    </div>
+                                    <div class="delay-100 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op3" value="Công nghệ thông tin; Vận chuyển đường biển; Thực phẩm chức năng">
+                                        <label>Công nghệ thông tin; Vận chuyển đường biển; Thực phẩm chức năng</label>
+                                    </div>
+                                    <div class="delay-200 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op3" value="Kinh doanh kho bãi; Công nghệ thông tin; Vận chuyển đường hàng không ">
+                                        <label>Kinh doanh kho bãi; Công nghệ thông tin; Vận chuyển đường hàng không</label>
+                                    </div>
+                                </div>
+
+                                <!-- next previous button -->
+                                <div class="next-prev">
+                                    <button type="button" class="prev">
+                                        <i class="fa-solid fa-arrow-left"></i>Quay lại
+                                    </button>
+                                    <button type="button" class="next" id="step3btn">
+                                        Tiếp theo<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+
+
+                        <!-- step 4 -->
+                        <section class="steps">
+
+                            <!-- form -->
+                            <form id="step4" method="post" novalidate>
+
+                                <!-- heading -->
+                                <h2 class="q-heading">
+                                    Giá trị cốt lõi của Trang Huy là gì?
+                                </h2>
+
+                                <!-- form field -->
+                                <div class="form-inner">
+                                    <div class="bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op4" value="Tốc độ - Đổi mới - Tận tâm - Đoàn Kết - Trách nhiệm">
+                                        <label>Tốc độ - Đổi mới - Tận tâm - Đoàn Kết - Trách nhiệm</label>
+                                    </div>
+                                    <div class="delay-100 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op4"
+                                            value="An toàn - Tốc độ - Tận tâm - Đoàn kết - Trách nhiệm">
+                                        <label>An toàn - Tốc độ - Tận tâm - Đoàn kết - Trách nhiệm</label>
+                                    </div>
+                                    <div class="delay-200 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op4" value="Đoàn kết - Trách nhiệm - Kỷ luật - Tích cực - Đổi mới ">
+                                        <label>Đoàn kết - Trách nhiệm - Kỷ luật - Tích cực - Đổi mới</label>
+                                    </div>
+                                </div>
+
+                                <!-- next previous button -->
+                                <div class="next-prev">
+                                    <button type="button" class="prev">
+                                        <i class="fa-solid fa-arrow-left"></i>Quay lại
+                                    </button>
+                                    <button type="button" class="next" id="step4btn">
+                                        Tiếp theo<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+
+                    
+
+                        <!-- step 10 -->
+                        <section class="steps">
+
+                            <!-- form -->
+                            <form id="step10" method="post" novalidate>
+
+                                <!-- heading -->
+                                <h2 class="q-heading">
+                                    Đâu là văn hóa giới thiệu trong giao tiếp của Trang Huy? 
+                                </h2>
+
+                                <!-- form field -->
+                                <div class="form-inner">
+                                    <div class="bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op5" value="Giới thiệu tên, tuổi, quê quán">
+                                        <label>Giới thiệu tên, tuổi, quê quán</label>
+                                    </div>
+                                    <div class="delay-100 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op5" value="Giới thiệu tên đi kèm chức vụ">
+                                        <label>Giới thiệu tên đi kèm chức vụ</label>
+                                    </div>
+                                    <div class="delay-200 bounce-left radio-field">
+                                        <input class="checkmark" type="radio" name="op5" value="Giới thiệu theo chức vụ , tuổi tác">
+                                        <label>Giới thiệu theo chức vụ , tuổi tác</label>
+                                    </div>
+                                </div>
+
+                                <!-- next previous button -->
+                                <div class="next-prev">
+                                    <button type="button" class="prev">
+                                        <i class="fa-solid fa-arrow-left"></i>Quay lại
+                                    </button>
+                                    <button type="button" class="apply" id="sub">
+                                        Submit<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+                        <div class="question overflow-hidden">
+                            <img src="./assets/images/question-sign.png" alt="question">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- result -->
+        <div class="loadingresult">
+            <img src="./assets/images/loading.gif" alt="loading">
+        </div>
+        <div class="result_page">
+            <div class="result_inner">
+                <div class="result_inner2">
+                    <h2>Knowledge Check</h2>
+                    <div class="u_result">
+                        <div class="u_score">Your Score: </div>
+                        <div class="u_prcnt">
+                            20%
+                        </div>
+                        <span>20 Points</span>
+                    </div>
+                    <div class="p_result">
+                        <div class="p_score">Passing Score: </div>
+                        <div class="p_prcnt">
+                            80%
+                        </div>
+                        <span>80 Points</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="result_show">
+                        <h2>Result</h2>
+                        <div class="pass_check">
+                            <i class="fa-solid fa-xmark"></i>You did not Pass
+                        </div>
+                        <div class="result_msg">
+                            Better Luck Next Time!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rectangle -->
+                <img class="behind_bg" src="./assets/images/bh-clip.png" alt="rectangle">
+            </div>
+        </div>
+
+    </main>
+
+    <div id="error"></div>
+
+
+    <!-- bootstrap 5 -->
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+
+    <!-- jQuery -->
+    <script src="./assets/js/jquery-3.6.3.min.js" defer></script>
+
+    <!-- Result JS -->
+    <script src="./assets/js/result.js" defer></script>
+
+    <!-- Custom js -->
+    <script src="./assets/js/custom.js" defer></script>
+
+</body>
+
+</html>
